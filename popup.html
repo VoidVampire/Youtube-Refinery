@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #progressContainer {
+            display: none;
+            width: 100%;
+            background-color: #f3f3f3;
+        }
+
+        #progressBar {
+            width: 0%;
+            height: 30px;
+            background-color: #4caf50;
+        }
+
+        #bannedList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #bannedList li {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Refinery</h1>
+    <label for="keywords">Keywords (comma-separated):</label>
+    <input type="text" id="keywords" placeholder="e.g., valorant, music, genshin"><br>
+    <label for="channelNames">Blocked Channel Names (comma-separated):</label>
+    <input type="text" id="channelNames" placeholder="e.g., SomeChannel, AnotherChannel"><br>
+    <button id="filterButton">Apply Filters</button>
+    <div id="progressContainer">
+        <div id="progressBar"></div>
+    </div>
+    <ul id="bannedList"></ul>
+    <script src="popup.js"></script>
+</body>
+</html>
